@@ -1,1 +1,6 @@
-<p>credit-card-form works!</p>
+<form [formGroup]='cardForm'>
+    <input formControlName='name'>
+</form>
+
+<div>name: {{ cardForm.value.name | json}}</div>
+<div>valid: {{cardForm.valid}}</div>
