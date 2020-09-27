@@ -1,5 +1,5 @@
 <form [formGroup]='cardForm'>
-    <input formControlName='name'>
+    <app-input [control]="cardForm.get('name')"></app-input>
 </form>
 
 <div>Form: {{ cardForm.value | json}}</div>
