@@ -4,6 +4,7 @@
     <app-input [control]="cardForm.get('expiration')" label="Expiration"></app-input>
     <app-input [control]="cardForm.get('securityCode')" label="Security Code"></app-input>
     <button [disabled]="cardForm.invalid" class="button is-primary" type="submit">Submit</button>
+    <button class="button is-warning" type="button" (click)="onReset()">Reset</button>
 </form>
 <hr>
 <div>Form: {{ cardForm.value | json}}</div>

@@ -22,5 +22,6 @@ export class DateFormControl extends FormControl {
             super.setValue(`${value}/`, { ...options, emitModelToViewChange: true });
             return;
         }
+        super.setValue(value, { ...options, emitModelToViewChange: true });
     }
 }

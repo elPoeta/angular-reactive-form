@@ -21,7 +21,11 @@ export class CreditCardFormComponent implements OnInit {
   }
 
   onSubmit() {
+    console.log('Form submited : ', this.cardForm.getRawValue())
+  }
 
+  onReset() {
+    this.cardForm.reset();
   }
 
 }
